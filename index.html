@@ -168,7 +168,32 @@
 
         .jadwal-harga:active {
             opacity: 0.8;
-        }    
+        }
+        
+        .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        @media (max-width:768px){
+            .semua-tombol{
+                display: none;
+                flex-direction: column;
+            }
+
+            #menu-toggle:checked ~ .semua-tombol {
+                display: flex;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -176,7 +201,11 @@
     
     <div class="container">
 
-        <img src="https://tse2.mm.bing.net/th/id/OIP.b0vbIm6NuIPcIRkR2IR9fAHaDP?pid=Api&P=0&h=180" class="haqeem-logo">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.b0vbIm6NuIPcIRkR2IR9fAHaDP?pid=Api&P=0&h=180" class="haqeem-logo">
+      
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">=</label>
+      
       <div class="semua-tombol">
             <a href="https://haqeemtravel.co.id/#pakethaji&umroh">
                 <button class="paket-umroh">

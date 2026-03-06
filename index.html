@@ -49,14 +49,6 @@
             text-align: center;
         }
 
-        .hero button {
-            padding: 12px 25px;
-            background: gold;
-            border: none;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
         .paket-umroh {
              color: black;
              background: none;
@@ -67,12 +59,12 @@
         }
 
         .paket-umroh:hover {
-             background-color: rgb(0, 0, 0);
-             color: white;
+             opacity: 0.5;
+             
         }
 
         .paket-umroh:active {
-             opacity: 0.5;
+             opacity: 0.8;
         }
 
         .tentang-kami {
@@ -85,12 +77,12 @@
         }
 
         .tentang-kami:hover {
-             background-color: rgb(0, 0, 0);
-             color: white;
+             opacity: 0.5;
+             
         }
 
         .tentang-kami:active {
-             opacity: 0.5;
+             opacity: 0.8;
         }
 
         .testimoni {
@@ -103,12 +95,12 @@
         }
 
         .testimoni:hover {
-             background-color: rgb(0, 0, 0);
-             color: white;
+             opacity: 0.5;
+             
         }
 
         .testimoni:active {
-             opacity: 0.5;
+             opacity: 0.8;
         }
 
         .artikel-edukasi {
@@ -121,12 +113,12 @@
         }
 
         .artikel-edukasi:hover {
-             background-color: rgb(0, 0, 0);
-             color: white;
+             opacity: 0.5;
+             
         }
 
         .artikel-edukasi:active {
-             opacity: 0.5;
+             opacity: 0.8;
         }
 
         .hubungi-kami {
@@ -139,13 +131,28 @@
         }
 
         .hubungi-kami:hover {
-             background-color: rgb(0, 0, 0);
-             color: white;
+             opacity: 0.5;
+            
         }
 
         .hubungi-kami:active {
-             opacity: 0.5;
+             opacity: 0.8;
         }
+
+        .jadwal-harga {
+            cursor: pointer;
+            background-color:gold;
+            border-color: rgb(0, 0, 0);
+        }
+
+        .jadwal-harga:hover {
+             opacity: 0.5;
+            
+        }
+
+        .jadwal-harga:active {
+            opacity: 0.8;
+        }    
     </style>
 </head>
 
@@ -200,7 +207,11 @@
         <div>
             <h1>Paket Umroh Ramadhan 2026</h1>
             <p>Ibadah Khusyuk di Bulan Suci</p>
-            <button>Cek Jadwal & Harga</button>
+            <a href="https://haqeemtravel.co.id/#pakethaji&umroh">
+                <button class="jadwal-harga">
+                    Jadwal & Harga
+                </button>
+            </a>
         </div>
     </section>
 </body>

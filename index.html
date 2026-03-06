@@ -26,6 +26,15 @@
             gap: 30px;
         }
 
+        .semua-tombol a {
+            text-decoration: none;
+        }
+
+        .semua-tombol button {
+            width: 180px;
+            text-align: left;
+        }
+
         .hero {
             height: 100vh;
             background: url("https://wallpapers.com/images/hd/kaaba-cloudy-sky-s6vygj1p67sfwdzc.jpg") center no-repeat;
@@ -182,10 +191,24 @@
         }
 
         @media (max-width:768px) {
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+            }
 
             .semua-tombol{
                 display: none;
                 flex-direction: column;
+                position: absolute;
+                top: 70px;
+                right: 20px;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                gap: 15px;
             }
 
             #menu-toggle:checked ~ .semua-tombol {
@@ -194,6 +217,8 @@
 
             .menu-icon {
                 display: block;
+                font-size: 28px;
+                cursor: pointer;
             }
         }
     </style>

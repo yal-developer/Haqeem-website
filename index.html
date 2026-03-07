@@ -218,23 +218,55 @@
             color: black;
         }
 
+        .paket {
+            padding: 60px 10%;
+            background: #f5f5f5;
+        }
+
+        .paket h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
         .paket-container {
             display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
         }
 
         .paket-card {
-            width: 30%;
             background: white;
             border-radius: 10px;
-            padding: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            
         }
 
-        .paket-card {
+        .paket-card img {
             width: 100%;
-            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .paket-card h3 {
+            margin: 15px 0;
+        }
+
+        .paket-card button {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: #1f3c6e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .paket-card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
         }
 
         .menu-icon {
@@ -248,8 +280,13 @@
         }
 
         @media (max-width:500px) {
-            .paket-card{
-                width: 100%;
+            .paket-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .paket-card {
+                width: 90%;
             }
             .kelebihan {
                 gap: 20px;

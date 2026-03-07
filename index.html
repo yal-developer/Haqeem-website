@@ -218,6 +218,25 @@
             color: black;
         }
 
+        .paket-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .paket-card {
+            width: 30%;
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .paket-card {
+            width: 100%;
+            border-radius: 10px;
+        }
+
         .menu-icon {
             display: none;
             font-size: 30px;
@@ -229,6 +248,9 @@
         }
 
         @media (max-width:500px) {
+            .paket-card{
+                width: 100%;
+            }
             .kelebihan {
                 gap: 20px;
                 padding: 10px;
@@ -343,13 +365,31 @@
         <div class="paket-container">
             <div class="paket-card">
                 <img src="umroh35.jpeg">
-                <h3>Umroh Akhir Ramadhan</h3>
+                <h3>Umroh Plus Turkey</h3>
                 <button>Lihat Detail</button>
             </div>
 
             <div class="paket-card">
                 <img src="">
                 <h3>Umroh Plus Turkey</h3>
+                <button>Lihat Detail</button>
+            </div>
+
+            <div class="paket-card">
+                <img src="">
+                <h3>Umroh Akhir Ramadhan</h3>
+                <button>Lihat Detail</button>
+            </div>
+
+            <div class="paket-card">
+                <img src="">
+                <h3>Umroh Akhir Ramadhan</h3>
+                <button>Lihat Detail</button>
+            </div>
+
+            <div class="paket-card">
+                <img src="">
+                <h3>Umroh Akhir Ramadhan</h3>
                 <button>Lihat Detail</button>
             </div>
         </div>

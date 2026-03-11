@@ -111,7 +111,7 @@
              opacity: 0.8;
         }
 
-        .galeri {
+        .galeri-umroh {
              color: black;
              background: none;
              border: none;
@@ -120,13 +120,24 @@
              transition: 0.15s;
         }
 
-        .galeri:hover {
+        .galeri-umroh:hover {
              opacity: 0.5;
              
         }
 
-        .galeri:active {
+        .galeri-umroh:active {
              opacity: 0.8;
+        }
+
+        .galeri {
+            text-align: center;
+            margin-top: 68px;
+        }
+
+        .galeri video {
+            width: 800px;
+            max-width: 90%;
+            border-radius: 10px;
         }
 
         .testimoni {
@@ -408,9 +419,9 @@
                 </button>
             </a>
 
-            <a href="">
-                <button class="galeri">
-                    galeri
+            <a href="#galeri">
+                <button class="galeri-umroh">
+                    Galeri
                 </button>
             </a>
        
@@ -511,6 +522,21 @@ Didukung oleh tim yang berpengalaman dan pembimbing ibadah yang kompeten, Haqeem
 Kami percaya bahwa perjalanan ibadah bukan sekadar perjalanan biasa, melainkan perjalanan spiritual yang penuh makna. Oleh karena itu, kepuasan dan kenyamanan jamaah menjadi prioritas utama dalam setiap layanan yang kami berikan.
         </p>
     </div>
+
+    <div class="galeri">
+        <div id="galeri">
+            <h4 class="judul-galeri">
+                Galeri
+            </h4>
+        </div>
+    </div>
+
+    <div class="galeri">
+        <video autoplay loop controls>
+            <source src="umrohgaleri1.mp4" type="video/mp4">
+        </video>
+    </div>
+
 </body>
 </html>
 
